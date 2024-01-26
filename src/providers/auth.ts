@@ -30,7 +30,7 @@ export const authProvider: AuthBindings = {
 
       return {
         success: true,
-        redirectTo: "/",
+        redirectTo: "/home",
       };
     } catch (e) {
       const error = e as Error;

@@ -4,7 +4,7 @@ import { IResourceItem } from "@refinedev/core";
 export const resources: IResourceItem[] = [
   {
     name: "dashboard",
-    list: "/",
+    list: "/home",
     meta: {
       label: "Dashboard",
       icon: <DashboardOutlined />,
