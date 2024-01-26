@@ -6,7 +6,7 @@ export const WelcomePage = () => {
   const { Title } = Typography;
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100vh", justifyContent: "center", alignItems: "center" }}>
-      <Title level={2}>Welcome to Admin Portal</Title>
+      <Title level={2}>Welcome to Admin Portal !</Title>
       <Button
         onClick={() => {
           navigate("/home");
