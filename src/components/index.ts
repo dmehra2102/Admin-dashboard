@@ -7,6 +7,13 @@ import AccordionHeaderSkeleton from "./skeleton/accordion-header";
 import LatestActivitiesSkeleton from "./skeleton/latest-activities";
 import DashboardTotalCountCard from "./home/total-count-card";
 import LatestActivities from "./home/latest-activities";
+import SelectOptionWithAvatar from "./select-option-with-avatar";
+import { KanbanBoardContainer } from "./tasks/kanban/board";
+import KanbanColumn from "./tasks/kanban/column";
+import KanbanItem from "./tasks/kanban/item";
+import { ProjectCard, ProjectCardMemo } from "./tasks/kanban/card";
+import { TextIconSvg, TextIcon } from "./text-icon";
+import { KanbanAddCardButton } from "./tasks/kanban/add-card-button";
 export {
   UpcomingEvents,
   DealsChart,
@@ -16,5 +23,14 @@ export {
   AccordionHeaderSkeleton,
   LatestActivitiesSkeleton,
   DashboardTotalCountCard,
-  LatestActivities
+  LatestActivities,
+  SelectOptionWithAvatar,
+  KanbanBoardContainer,
+  KanbanColumn,
+  KanbanItem,
+  ProjectCard,
+  TextIcon,
+  TextIconSvg,
+  KanbanAddCardButton,
+  ProjectCardMemo,
 };

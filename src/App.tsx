@@ -8,7 +8,7 @@ import routerBindings, { CatchAllNavigate, DocumentTitleHandler, UnsavedChangesN
 import { App as AntdApp } from "antd";
 import { authProvider, dataProvider, liveProvider } from "./providers";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
-import { CompanyList, ForgotPassword, Home, Login, Register, CreateCompany } from "./pages";
+import { CompanyList, ForgotPassword, Home, Login, Register, CreateCompany, EditCompany, TaskList } from "./pages";
 import Layout from "./components/layout";
 import { resources } from "./config/resources";
 
@@ -52,6 +52,10 @@ function App() {
                   <Route path="/companies">
                     <Route index element={<CompanyList />} />
                     <Route path="new" element={<CreateCompany />} />
+                    <Route path="edit/:id" element={<EditCompany />} />
+                  </Route>
+                  <Route path="/tasks">
+                    <Route index element={<TaskList />} />
                   </Route>
                 </Route>
               </Routes>
